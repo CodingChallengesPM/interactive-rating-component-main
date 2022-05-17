@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
+
 <body>
 
   <!-- Rating state start -->
-<aside>
-  <h2>How did we do?</h2>
-  <p>
-    Please let us know how we did with your support request. All feedback is appreciated 
-    to help us improve our offering!
-  </p>
-  <ol>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-  </ol>
-  <button>Submit</button>
-</aside>
+  <aside class="feedback-card">
+    <header>
+      <figure>
+        <img src="./images/icon-star.svg" alt="An image of a star">
+      </figure>
+    </header>
+    <form action="POST">
+      <h2>How did we do?</h2>
+      <p class="cta">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <ol>
+        <li>
+          <p><label for="rating"><input type='radio' name="rating" value="1">1</label></p>
+        </li>
+        <li>
+          <p><label for="rating"><input type='radio' name="rating" value="2">2</label></p>
+        </li>
+        <li>
+          <p><label for="rating"><input type='radio' name="rating" value="3">3</label></p>
+        </li>
+        <li>
+          <p><label for="rating"><input type='radio' name="rating" value="4">4</label></p>
+        </li>
+        <li>
+          <p><label for="rating"><input type='radio' name="rating" value="5">5</label></p>
+        </li>
+      </ol>
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </aside>
 
- <!-- Rating state end -->
+  <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  You selected
+  <!-- Add rating here --> out of 5
 
   Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+  We appreciate you taking the time to give a rating. If you ever need more support,
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
 
-  
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </footer>
 </body>
+
 </html>
