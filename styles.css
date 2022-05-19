@@ -38,9 +38,27 @@ ol {
   font-family: var(--font-family);
 }
 
+.feedback-card figure {
+  padding: 0;
+  margin: 0;
+}
+
 .feedback-card p {
   font-size: 15px;
   color: var(--medium-grey);
+}
+
+/* TODO: check why ::before selector is not working */
+.feedback-card input[type="radio"] {
+  position: relative;
+}
+.feedback-card input[type="radio"]::before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0%;
+  left: 0;
+  background-color: red;
 }
 
 .submit {
